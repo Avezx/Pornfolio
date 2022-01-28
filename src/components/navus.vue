@@ -2,10 +2,13 @@
   <div id="nav">
       <ul class="nav-cont">
         <img class="logo" src="./logo.png">
-        <li class="nav-item"><a class="button">Portfolio</a></li>
+        <li class="nav-item"><a class="button" href="#down">Portfolio</a></li>
         <li class="nav-item"><a class="button">Cennik</a></li>
         <li class="nav-item"><a class="button">Seks</a></li>
       </ul>
+    <div id="down">
+      <h1></h1>
+    </div>
   </div>
 </template>
 
@@ -71,9 +74,9 @@ export default {
 }
 
 .logo {
-width: 60px;
-top: 1.5px;
-left: 1.5px;
+width: 45px;
+top: 10px;
+left: 10px;
 position: fixed;
 z-index: 2;
 
@@ -87,5 +90,26 @@ z-index: 2;
    left: 0;
    background:#2a2a2a;
    transition: .2s;
+}
+   #down {
+    margin-top: 500px;
+    padding-bottom: 25%;
+    transition: .2s;
+   } 
+
+   a {
+    color: unset;
+}
+
+a:hover {
+    color: unset;
+}
+
+a:active {
+    color: unset;
+}
+
+a:link {
+    color: unset;
 }
 </style>

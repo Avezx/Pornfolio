@@ -20,6 +20,7 @@ export default {
 <style>
 body{
 background-color:#2a2a2a;
+
 }
 
 .bg-img{
