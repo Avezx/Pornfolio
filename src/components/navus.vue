@@ -2,7 +2,7 @@
   <div id="nav">
       <ul class="nav-cont">
         <img class="logo" src="./logo.png">
-        <li class="nav-item" ><a class="button">Portfolio</a></li>
+        <li class="nav-item"><a class="button">Portfolio</a></li>
         <li class="nav-item"><a class="button">Cennik</a></li>
         <li class="nav-item"><a class="button">Seks</a></li>
       </ul>
@@ -54,7 +54,7 @@ export default {
    text-decoration: none;
 }
 
-.button:before{
+.button::before{
    position: absolute;
    content: '';
    width: 0%;
@@ -65,7 +65,7 @@ export default {
    transition: .2s;
 }
 
-.button:hover:before {
+.button:hover::before {
     
   width: 100%;
 }
@@ -78,7 +78,7 @@ position: fixed;
 z-index: 2;
 
 }
-.changed:before {
+.changed::before {
    position: absolute;
    content: '';
    width: 0%;
