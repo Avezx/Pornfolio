@@ -10,7 +10,7 @@ new Vue({
 
 
 const sectionOne = document.querySelector(".bg-img")
-const navbar = document.querySelector(".nav-cont")
+const navbar = document.querySelector(".button")
 
 const observer = new IntersectionObserver((entries) => {
   for (const entry of entries) {
@@ -25,3 +25,5 @@ const observer = new IntersectionObserver((entries) => {
 })
 
 observer.observe(sectionOne)
+
+

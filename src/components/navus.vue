@@ -1,7 +1,7 @@
 <template>
   <div id="nav">
-    <img class="logo" src="./zajebistelogo.png">
       <ul class="nav-cont">
+        <img class="logo" src="./logo.png">
         <li class="nav-item" ><a class="button">Portfolio</a></li>
         <li class="nav-item"><a class="button">Cennik</a></li>
         <li class="nav-item"><a class="button">Seks</a></li>
@@ -30,7 +30,8 @@ export default {
   align-items: center;
   width: 100%;
   top: -0.9%;
-  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  padding:0;
 }
 .nav-item {
   font-size: 18px;
@@ -38,12 +39,11 @@ export default {
   font-family: 'Open Sans', sans-serif;
   font-weight: 700;
   display: inline-block;
-  position: flex;
-  transform: UPPERCASE;
+
   position: -webkit-sticky;
   position: sticky;
   align-self: flex-start;
-  
+
 }
 
 .button{
@@ -61,7 +61,7 @@ export default {
    height: 4px;
    top:100%;
    left: 0;
-   background:#ff506d;
+   background:#f30044;
    transition: .2s;
 }
 
@@ -78,8 +78,14 @@ position: fixed;
 z-index: 2;
 
 }
-.changed {
-	color: rgb(255, 255, 255) !important;
-  transition: .2s;
+.changed:before {
+   position: absolute;
+   content: '';
+   width: 0%;
+   height: 4px;
+   top:100%;
+   left: 0;
+   background:#2a2a2a;
+   transition: .2s;
 }
 </style>

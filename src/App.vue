@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <nav1 />
-    <img class="bg-img" src="./assets/zajebistetlo.png">
+    <img class="bg-img" src="./assets/tlo.svg">
     <div class="bg-color">
     </div>
   </div>
@@ -19,7 +19,7 @@ export default {
 
 <style>
 body{
-  overflow: hidden;
+background-color:#2a2a2a;
 }
 
 .bg-img{
@@ -29,6 +29,7 @@ body{
   left: 0;
   z-index: 1;
 
+
 }
 .bg-color{
   width: 100%;
@@ -37,7 +38,7 @@ body{
   left: 0;
   z-index: 1;
   height: 1000px;
-  background-color: #2a2a2a;
+  background-color: #f30044;
 
 }
 
